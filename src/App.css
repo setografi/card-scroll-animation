@@ -1,0 +1,32 @@
+/* src/App.css */
+
+.cards-container {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: transform 0.7s ease-in-out;
+}
+
+.scrolled .card:nth-child(1) {
+  transform: translateX(-300px) translateY(-50px) rotate(-5deg);
+}
+.scrolled .card:nth-child(2) {
+  transform: translateX(100px) translateY(-50px) rotate(10deg);
+}
+.scrolled .card:nth-child(3) {
+  transform: translateX(-600px) translateY(150px) rotate(5deg);
+}
+.scrolled .card:nth-child(4) {
+  transform: translateX(400px) translateY(150px) rotate(-5deg);
+}
+.scrolled .card:nth-child(5) {
+  transform: translateX(-350px) translateY(400px) rotate(-8deg);
+}
+.scrolled .card:nth-child(6) {
+  transform: translateX(150px) translateY(400px) rotate(8deg);
+}
